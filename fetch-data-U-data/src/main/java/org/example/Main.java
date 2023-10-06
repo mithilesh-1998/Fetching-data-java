@@ -16,7 +16,7 @@ import static java.lang.System.in;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        String myUrl = "https://api.chucknorris.io/jokes/random";
+        String myUrl = " https://api.zippopotam.us/us/33162";
 
         HttpURLConnection connection = null;
         int responsecode = 0;
@@ -56,13 +56,11 @@ public class Main {
             System.out.println(apiData.toString());
             JSONObject jsonApIResponse = new JSONObject(apiData.toString());
 
-            System.out.println(jsonApIResponse.get("categories"));
-            System.out.println(jsonApIResponse.get("created_at"));
-            System.out.println(jsonApIResponse.get("icon_url"));
-            System.out.println(jsonApIResponse.get("id"));
-            System.out.println(jsonApIResponse.get( "updated_at"));
-            System.out.println(jsonApIResponse.get("url"));
-            System.out.println(jsonApIResponse.get("value"));
+            System.out.println(jsonApIResponse.get("post code"));
+            System.out.println(jsonApIResponse.get("country"));
+            System.out.println(jsonApIResponse.get("country abbreviation"));
+            System.out.println(jsonApIResponse.get("places"));
+           
 
 
 
